@@ -1,0 +1,28 @@
+# Grey/blue gtk-color-scheme:
+gtk-color-scheme = "base_color:#FCFCFC\nfg_color:#000000\ntooltip_fg_color:#000000\nselected_bg_color:#B8C1CC\nselected_fg_color:#000000\ntext_color:#101010\nbg_color:#CECECE\ntooltip_bg_color:#F7EFBA"
+gtk-color-scheme = "selected_base_color:#A9BCD4"
+gtk-color-scheme = "selected_text_color:#000000"
+
+include "gtk-widgets.rc"
+
+style "button-griza"
+{
+	bg[ACTIVE]			= mix(0.5, shade(0.8, @selected_bg_color), @bg_color)
+	bg[SELECTED]		= shade(0.7,@selected_bg_color)
+}
+
+widget_class "*<GtkButton>"			style "button-griza"
+widget_class "*OptionMenu*"			style "button-griza"
+class "*OptionMenu*"				style "button-griza"
+widget_class "*<GtkToolbar>.*.<GtkButton>*" style:highest	"button-griza"
+
+# this prevent overwriting others widgets style
+widget_class "*.<GtkTreeView>.<GtkButton>*"		style "treeview_header"
+widget_class "*.<GtkCTree>.<GtkButton>*"		style "treeview_header"
+widget_class "*.<GtkList>.<GtkButton>*"			style "treeview_header"
+widget_class "*.<GtkCList>.<GtkButton>*"		style "treeview_header"
+widget_class "*.<GtkCMCTree>.<GtkButton>*"		style "treeview_header"
+widget_class "*.<GtkCMCList>.<GtkButton>*"		style "treeview_header"
+
+include "panel.rc"
+include "xfce.rc"
