@@ -1,0 +1,8 @@
+{
+	"clangd.semanticHighlighting": true,
+
+	"diagnostic.errorSign": ">>",
+	"diagnostic.warningSign": ">>",
+
+	"suggest.labelMaxLength": 64
+}
