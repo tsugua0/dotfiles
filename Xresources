@@ -1,0 +1,48 @@
+xterm*font: -misc-fixed-medium-r-normal--18-*-*-*-c-*-iso10646-1
+!xterm*font: -xos4-terminus-medium-r-normal--17-*-*-*-c-*-iso10646-1
+xterm*background: black
+xterm*foreground: grey
+xterm*termName: xterm-256color
+
+*VT100.colorBDMode: true
+*VT100.colorBD: white
+*VT100.colorULMode: true
+*VT100.colorUL: cyan
+*VT100.veryBoldColors: 6
+
+! special
+*.foreground:   #ffffce
+*.background:   #000000
+*.cursorColor:  #ffffce
+
+! black
+*.color0:       #1d1d1d
+*.color8:       #000000
+
+! red
+*.color1:       #cda074
+*.color9:       #fecea0
+
+! green
+*.color2:       #9e744d
+*.color10:      #cc734d
+
+! yellow
+*.color3:       #fecf75
+*.color11:      #fd9f4d
+
+! blue
+*.color4:       #720102
+*.color12:      #cb4a05
+
+! magenta
+*.color5:       #734c4d
+*.color13:      #4e739f
+
+! cyan
+*.color6:       #979797
+*.color14:      #fed04d
+
+! white
+*.color7:       #ffffce
+*.color15:      #ffffff
