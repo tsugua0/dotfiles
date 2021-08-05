@@ -26,7 +26,7 @@ focus_follows_mouse no
 font -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
 
 # wallpaper
-exec_always --no-startup-id feh --bg-scale $HOME/Documents/wallpaper00.jpg
+exec_always --no-startup-id feh --bg-scale $HOME/Documents/wallpapers/wallpaper00.jpg
 
 # layout
 exec_always --no-startup-id setxkbmap -layout us,ru -option 'grp:alt_shift_toggle,grp_led:scroll'
