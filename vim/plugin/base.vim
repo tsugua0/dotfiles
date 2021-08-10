@@ -52,7 +52,6 @@ set foldenable
 set foldlevel=100
 set foldmethod=indent
 set autoindent
-set smartindent
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
